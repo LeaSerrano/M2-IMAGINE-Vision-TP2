@@ -4,7 +4,7 @@ using UnityEngine;
 public class RandomCatBot : MonoBehaviour
 {
     public GameObject prefab;
-    public int nbObjects = 5;
+    public int nbObjects;
     public float minX = -23f;
     public float maxX = 23f;
     public float minZ = -23f;
