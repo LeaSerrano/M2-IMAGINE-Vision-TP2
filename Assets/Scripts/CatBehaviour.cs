@@ -4,8 +4,10 @@ using UnityEngine;
 public class CatBehaviour : MonoBehaviour
 {
     public GameObject fx;
+    public GameObject worldObject;
     void Start()
     {
+        worldObject = GameObject.Find("World");
     }
     void Update()
     {
@@ -14,6 +16,7 @@ public class CatBehaviour : MonoBehaviour
     void OnTriggerEnter(Collider other)
     { // OnCollisionEnter
         AudioSource collisionSound = GameObject.Find("World").GetComponent<AudioSource>();
+
         if (collisionSound)
         {
             collisionSound.Play();
@@ -22,6 +25,7 @@ public class CatBehaviour : MonoBehaviour
         {
                 Instantiate(fx, transform.position, Quaternion.identity);
                 Destroy(gameObject);
+            worldObject.SendMessage("AddHit");
         }
     }
 }
