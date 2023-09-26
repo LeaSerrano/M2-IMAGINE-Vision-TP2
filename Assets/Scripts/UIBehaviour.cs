@@ -9,7 +9,6 @@ public class UIBehaviour : MonoBehaviour
     TMP_Text headText;
     TMP_Text timerText;
     int nbCats = 0;
-    int currentTime = 100;
     void Start()
     {
         headText = GameObject.Find("lblCats").GetComponent<TMPro.TMP_Text>();
@@ -26,12 +25,12 @@ public class UIBehaviour : MonoBehaviour
     }
     public IEnumerator TimerTick()
     {
-        while (currentTime > 0)
+        while (GameVariables.currentTime > 0)
         {
             // attendre une seconde
             yield return new WaitForSeconds(1);
-            currentTime--;
-            timerText.text = "Time : " + currentTime.ToString();
+            GameVariables.currentTime--;
+            timerText.text = "Time : " + GameVariables.currentTime.ToString();
         }
         // game over
         SceneManager.LoadScene("sceneCatBots"); // le nom de votre scene
