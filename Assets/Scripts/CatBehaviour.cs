@@ -23,8 +23,9 @@ public class CatBehaviour : MonoBehaviour
         }
         if (other.tag == "Player")
         {
-                Instantiate(fx, transform.position, Quaternion.identity);
-                Destroy(gameObject);
+            print("test");
+            Instantiate(fx, transform.position, Quaternion.identity);
+            Destroy(gameObject);
             worldObject.SendMessage("AddHit");
         }
     }

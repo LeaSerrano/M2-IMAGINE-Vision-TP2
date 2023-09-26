@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: d1c3109bdb54ad54c8a2b2838528e640
+  - enabled: 1
+    path: Assets/dragonHouse.unity
+    guid: ad60b4798fbc3124f855a0d391e21f96
+  - enabled: 1
+    path: Assets/terrain.unity
+    guid: 8000e76fccf1c53439bb56eb45c725f1
   m_configObjects: {}

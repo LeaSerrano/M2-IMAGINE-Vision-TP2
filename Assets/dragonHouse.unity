@@ -859,10 +859,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dragon_Baked_Actions_fbx_7.4_binary
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 08d686d3cd058fe4fb7d57927b580059, type: 3}
+      propertyPath: m_TagString
+      value: Dragon
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 08d686d3cd058fe4fb7d57927b580059, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 968913444}
   m_SourcePrefab: {fileID: 100100000, guid: 08d686d3cd058fe4fb7d57927b580059, type: 3}
 --- !u!1 &838968056
 GameObject:
@@ -1200,6 +1207,32 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &968913441 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 08d686d3cd058fe4fb7d57927b580059, type: 3}
+  m_PrefabInstance: {fileID: 730957550}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &968913444
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 968913441}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 13.959274, y: 29.446337, z: 29.434435}
+  m_Center: {x: 0.99778175, y: 12.223159, z: -2.3532116}
 --- !u!1 &1161976337
 GameObject:
   m_ObjectHideFlags: 0
@@ -1459,8 +1492,28 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 149790, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1605609230}
   m_SourcePrefab: {fileID: 100100000, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
+--- !u!1 &1605609229 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 149790, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
+  m_PrefabInstance: {fileID: 1605609228}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1605609230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1605609229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb89f6653e98e344e926332b13627a5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1666725950
 GameObject:
   m_ObjectHideFlags: 0
