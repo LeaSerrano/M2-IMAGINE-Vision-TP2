@@ -7,7 +7,7 @@ public class CatBehaviour : MonoBehaviour
     public GameObject worldObject;
     void Start()
     {
-        worldObject = GameObject.Find("World");
+       worldObject = GameObject.Find("World");
     }
     void Update()
     {
@@ -21,9 +21,8 @@ public class CatBehaviour : MonoBehaviour
         {
             collisionSound.Play();
         }
-        if (other.tag == "Player")
+        if (other.CompareTag("Player"))
         {
-            print("test");
             Instantiate(fx, transform.position, Quaternion.identity);
             Destroy(gameObject);
             worldObject.SendMessage("AddHit");

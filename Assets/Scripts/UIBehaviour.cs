@@ -8,7 +8,6 @@ public class UIBehaviour : MonoBehaviour
 {
     TMP_Text headText;
     TMP_Text timerText;
-    int nbCats = 0;
     void Start()
     {
         headText = GameObject.Find("lblCats").GetComponent<TMPro.TMP_Text>();
@@ -20,8 +19,8 @@ public class UIBehaviour : MonoBehaviour
     }
     public void AddHit()
     {
-        nbCats++;
-        headText.text = "Catbots touchés : " + nbCats;
+        GameVariables.nbCats++;
+        headText.text = "Catbots touchés : " + GameVariables.nbCats;
     }
     public IEnumerator TimerTick()
     {

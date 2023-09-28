@@ -11,14 +11,14 @@ public class ChangeScene : MonoBehaviour
     {
         print(other.tag);
 
-        if (other.tag == "Dragon")
+        if (other.tag == "Dragon" && GameVariables.nbCats >= 2)
         {
-            LoadMenu();
+            LoadTerrain();
             
         }
     }
 
-    void LoadMenu()
+    void LoadTerrain()
     {
         SceneManager.LoadScene("terrain");
     }
